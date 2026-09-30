@@ -73,7 +73,7 @@ For reference, the CPU fallback (PyTorch) on a 13th-gen Intel i5 laptop transcri
 Requirements: Windows 11, Python 3.11–3.13 (native **ARM64** Python on Snapdragon), ~2 GB disk.
 
 ```powershell
-git clone <this repo> ; cd vaaninotes
+git clone https://github.com/SinghCharanjeet11/vaaninotes.git ; cd vaaninotes
 powershell -ExecutionPolicy Bypass -File setup.ps1     # installs deps, downloads the AI Hub model for your chip
 .\run.ps1                                              # opens http://127.0.0.1:7860
 ```
