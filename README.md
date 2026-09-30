@@ -124,7 +124,7 @@ DESIGN.md              Design system the UI is built from
 .venv\Scripts\python -m pytest -q
 ```
 
-Verified so far: 11 unit tests (including the decoder against the AI Hub I/O contract); the full pipeline, web API and UI on the CPU path (x86 Windows 11). The NPU path is implemented against Qualcomm's published model contract and must be confirmed on a Snapdragon device with `scripts/benchmark.py`.
+Verified so far: 20 automated tests (the decoder against the AI Hub I/O contract, the notes pipeline, and the web API); the full pipeline, web API and UI on the CPU path (x86 Windows 11). The NPU path is implemented against Qualcomm's published model contract and must be confirmed on a Snapdragon device with `scripts/benchmark.py`.
 
 ## Limitations & roadmap
 
