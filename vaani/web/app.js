@@ -144,7 +144,9 @@ function renderBlocks(text, lang) {
       list.append(el("li", { text: clean(bullet[1]) }));
     } else {
       list = null;
-      frag.append(el("p", { lang, text: clean(line) }));
+      // A whole line wrapped in _underscores_ is a status message (e.g. "_No speech detected._").
+      const italic = line.match(/^_(.+)_$/);
+      frag.append(italic ? el("p", { lang }, el("em", { text: clean(italic[1]) })) : el("p", { lang, text: clean(line) }));
     }
   }
   return frag;
