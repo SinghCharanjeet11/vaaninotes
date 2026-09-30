@@ -1,0 +1,2 @@
+# Windows on Snapdragon (ARM64): ONNX Runtime + Qualcomm QNN execution provider for the Hexagon NPU
+onnxruntime-qnn>=2.0
